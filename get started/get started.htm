@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<htme lang="en-US">
+  <head>
+    <title>Get Started</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.htm"
+          ><img src="images/Logo.jpeg" height="50px"
+        /></a>
+        <a class="navbar-brand" href="index.htm">
+          <span class="Title">PROGRESS TRACKER 2030</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.htm">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.htm">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.htm">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.htm">News and Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.htm">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.htm">United Nations</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Horizontal Steppers  -->
+    <div class="bs-stepper" id="steps">
+      <div class="bs-stepper-header" role="tablist">
+        <!--steps-->
+        <div class="step locations">
+          <button
+            class="step-trigger"
+            type="button"
+            data-toggle="collapse"
+            data-target="#map"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+            aria-controls="map"
+          >
+            <span class="bs-stepper-circle"
+              ><i class="fas fa-map-marker-alt"></i
+            ></span>
+            <span class="bs-stepper-label">Select Location</span>
+          </button>
+        </div>
+        <div class="line"></div>
+        <div class="step Goals">
+          <button
+            class="step-trigger collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#goals"
+            aria-expanded="false"
+            aria-controls="goals"
+          >
+            <span class="bs-stepper-circle"
+              ><i class="fas fa-check-double"></i
+            ></span>
+            <span class="bs-stepper-label">Select Goal(s)</span>
+          </button>
+        </div>
+        <div class="line"></div>
+        <div class="step Presentations">
+          <button
+            class="step-trigger collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#Presentation"
+            aria-expanded="false"
+            aria-controls="Presentation"
+          >
+            <span class="bs-stepper-circle"
+              ><i class="fas fa-chart-line"></i
+            ></span>
+            <span class="bs-stepper-label">Presentation Style</span>
+          </button>
+        </div>
+      </div>
+      <div class="bs-stepper-content">
+        <!-- your steps content here -->
+        <div
+          id="map"
+          class="collapse show"
+          aria-labelledby="locations"
+          data-parent="#steps"
+        >
+          <div class="row">
+            <div class="col-lg-10 map-section text-center"></div>
+            <div class="col-lg-2 d-flex flex-column">
+              <a
+                href="#goals"
+                data-toggle="collapse"
+                data-target="#goals"
+                class="mt-auto"
+              >
+                <button class="btn btn-outline-secondary btn-lg m-2">
+                  Continue
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          id="goals"
+          class="collapse"
+          aria-labelledby="Goals"
+          data-parent="#steps"
+        >
+          <div class="row padding">
+            <div
+              class="custom-control custom-checkbox image-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal1" />
+              <label class="custom-control-label" for="goal1">
+                <img
+                  src="images/goal1.png"
+                  alt="NO POVERTY"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox image-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal2" />
+              <label class="custom-control-label" for="goal2">
+                <img
+                  src="images/goal2.png"
+                  alt="Zero HUNGER"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal3" />
+              <label class="custom-control-label" for="goal3">
+                <img
+                  src="images/goal3.png"
+                  alt="GOOD HEALTH AND WELL-BEING"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal4" />
+              <label class="custom-control-label" for="goal4">
+                <img
+                  src="images/goal4.png"
+                  alt="QUALITY EDUCTATION"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal5" />
+              <label class="custom-control-label" for="goal5">
+                <img
+                  src="images/goal5.png"
+                  alt="GENDER EQUALITY"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal6" />
+              <label class="custom-control-label" for="goal6">
+                <img
+                  src="images/goal6.png"
+                  alt="CLEAN WATER AND SANITATION"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="row padding">
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal7" />
+              <label class="custom-control-label" for="goal7">
+                <img
+                  src="images/goal7.png"
+                  alt="AFFORDABLE AND CLEAN ENERGY"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal8" />
+              <label class="custom-control-label" for="goal8">
+                <img
+                  src="images/goal8.png"
+                  alt="DECENT WORK AND ECONOMIC GROWTH"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal9" />
+              <label class="custom-control-label" for="goal9">
+                <img
+                  src="images/goal9.png"
+                  alt="INDUSTRY,INNOVATION AND INFRASTRUCTURE"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal10" />
+              <label class="custom-control-label" for="goal10">
+                <img
+                  src="images/goal10.png"
+                  alt="REDUCED INEQUALITIES"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal11" />
+              <label class="custom-control-label" for="goal11">
+                <img
+                  src="images/goal11.png"
+                  alt="Sustainable CITIES AND COMMUNITIES"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal12" />
+              <label class="custom-control-label" for="goal12">
+                <img
+                  src="images/goal12.png"
+                  alt="RESPONSIBLE CONSUMPTION AND PRODUCTION"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="row padding">
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal13" />
+              <label class="custom-control-label" for="goal13">
+                <img
+                  src="images/goal13.png"
+                  alt="CLIMATE ACTION"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal14" />
+              <label class="custom-control-label" for="goal14">
+                <img
+                  src="images/goal14.png"
+                  alt="LIFE BELOW WATER"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal15" />
+              <label class="custom-control-label" for="goal15">
+                <img
+                  src="images/goal15.png"
+                  alt="LIFE ON LAND"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal16" />
+              <label class="custom-control-label" for="goal16">
+                <img
+                  src="images/goal16.png"
+                  alt="PEACE, JUSTICE AND STRONG INSTITUTIONS"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="custom-control custom-checkbox col-xs-12 col-sm-6 col-md-4 col-lg-2"
+            >
+              <input type="checkbox" class="custom-control-input" id="goal17" />
+              <label class="custom-control-label" for="goal17">
+                <img
+                  src="images/goal17.png"
+                  alt="PARTNERSHIP FOR THE GOALS"
+                  class="card-img-top"
+                />
+              </label>
+            </div>
+            <div
+              class="col-xs-12 col-sm-6 col-md-4 col-lg-2 d-flex flex-column"
+            >
+              <a
+                href="#Presentation"
+                data-toggle="collapse"
+                data-target="#Presentation"
+                class="mt-auto"
+              >
+                <button class="btn btn-outline-secondary btn-lg">
+                  Continue
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          id="Presentation"
+          class="collapse"
+          aria-labelledby="Presentations"
+          data-parent="#steps"
+        >
+          <!-- first row -->
+          <div class="row padding">
+            <div class="col-5 padding">
+              <i class="far fa-chart-bar graph-option1"></i>
+            </div>
+            <div class="col-5 custom-control custom-radio padding">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="column"
+                name="chart"
+                checked
+              />
+              <label class="custom-control-label" for="column"></label>
+            </div>
+          </div>
+          <!-- second row -->
+          <div class="row padding">
+            <div class="col-5 padding">
+              <i class="fas fa-chart-pie graph-option2"></i>
+            </div>
+            <div class="col-5 custom-control custom-radio padding">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="Pie"
+                name="chart"
+              />
+              <label class="custom-control-label" for="Pie"></label>
+            </div>
+          </div>
+          <!-- third row -->
+          <div class="row padding">
+            <div class="col-5 padding">
+              <i class="fas fa-chart-line graph-option3"></i>
+            </div>
+            <div class="col-5 custom-control custom-radio padding">
+              <input
+                type="radio"
+                class="custom-control-input"
+                id="Line"
+                name="chart"
+              />
+              <label class="custom-control-label" for="Line"></label>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 padding">
+              <button class="btn btn-outline-secondary btn-lg">
+                Compute
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Jquery , bootstrap js , popper js , MDB core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+  </body>
+</htme>
